@@ -3,7 +3,6 @@
 document.getElementById("add-btn").addEventListener("click", (e) => {
     var list = document.getElementById("list");
     var note = document.getElementById("add-input").value;
-    console.log(note);
 
     const newItem = document.createElement("li");
 
@@ -33,7 +32,6 @@ document.getElementById("add-btn").addEventListener("click", (e) => {
     list.appendChild(newItem);
     document.getElementById("add-input").value = "";
 
-    console.log(list);
     event.preventDefault();
 });
   
